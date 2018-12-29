@@ -1,0 +1,30 @@
+{
+    "name": "freedocms",
+    "version": "1.0.0",
+    "description": "飞渡芯官网",
+    "main": "serve.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "tsc && node serve.js"
+    },
+    "keywords": [
+        "freedo",
+        "cms"
+    ],
+    "author": "freedo",
+    "license": "MIT",
+    "dependencies": {
+        "koa": "^2.6.2",
+        "koa-bodyparser": "^4.2.1",
+        "koa-multer": "^1.0.2",
+        "koa-router": "^7.4.0",
+        "koa-static": "^5.0.0"
+    },
+    "devDependencies": {
+        "@types/koa": "^2.0.47",
+        "@types/koa-bodyparser": "^4.2.1",
+        "@types/koa-multer": "^1.0.0",
+        "@types/koa-router": "^7.0.35",
+        "@types/koa-static": "^4.0.0"
+    }
+}
