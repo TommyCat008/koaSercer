@@ -6,6 +6,8 @@ import { serveConfig } from './routers/config';
 // 引入路由
 import { routerIndex } from './routers/routes';
 
+import { DB } from './routers/dbs'
+
 /**
  * 创建Koa对象
  */
@@ -20,6 +22,9 @@ serveConfig(app);
  * 调用路由
  */
 routerIndex(app);
+
+// 连接数据库
+DB.connect();
 
 app.listen(3000);
 

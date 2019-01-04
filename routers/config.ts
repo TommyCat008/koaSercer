@@ -33,7 +33,7 @@ export function serveConfig(app: Koa) {
 
         ctx.set("Access-Control-Allow-Origin", "*");
         ctx.set("Access-Control-Allow-Headers", "X-HTTP-Method-Override,Origin,X-Requested-With,Content-Type,Accept,Authorization");
-        ctx.set("Access-Control-Allow-Methods", "GET,POST");
+        ctx.set("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
 
         let start = new Date();
         await next();
